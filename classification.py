@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 mnist = input_data.read_data_sets('MNIST_data',one_hot=True)
+#
 def add_layer(inputs,in_size,out_size,activation_function=None):
     with tf.name_scope('layer'):
         with tf.name_scope('weights'):
